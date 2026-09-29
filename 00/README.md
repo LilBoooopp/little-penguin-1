@@ -1,6 +1,4 @@
-# little-penguin-1
-
-## Assignment 00
+# Assignment 00
 
 ```bash
 git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
