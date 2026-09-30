@@ -64,6 +64,6 @@ $ dmesg > boot.log
 | `7.3.0-rc5` | Nearest tag in Linus's tree (release candidate 5) |
 | `-cbopp` | My `CONFIG_LOCALVERSION`, kept from the LFS config |
 | `-00011` | 11 commits past that tag |
-| `g6f8319e3e9a4` | Git commit hash, added by `CONFIG_LOCALVERSION_AUTO` |
+| `-g6f8319e3e9a4` | Git commit hash, added by `CONFIG_LOCALVERSION_AUTO` |
 
 The hash proves the kernel was built from a specific commit of the Git tree, not a release tarball. No `-dirty` suffix means the tree had no uncommited changes when it was built.
