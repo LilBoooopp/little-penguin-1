@@ -1,0 +1,30 @@
+From fb0de51d305ec41575dab1b6bd439f0d2be66290 Mon Sep 17 00:00:00 2001
+From: Charlie Bopp <charlie.bopp@live.com>
+Date: Wed, 30 Sep 2026 16:44:14 +0200
+Subject: [PATCH] kbuild: add -thor_kernel to EXTRAVERSION
+
+Changes kernelrelease to include "-thor_kernel". Kept -rc5 to preserve
+release candidate. To learn the basics of modifying the linux kernel
+and understanding the submission standards.
+
+Signed-off-by: Charlie Bopp <charlie.bopp@live.com>
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 6b8b812f23b9..4edbdf737b43 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@
+ VERSION = 7
+ PATCHLEVEL = 3
+ SUBLEVEL = 0
+-EXTRAVERSION = -rc5
++EXTRAVERSION = -rc5-thor_kernel
+ NAME = Baby Opossum Posse
+ 
+ # *DOCUMENTATION*
+-- 
+2.50.1
+
