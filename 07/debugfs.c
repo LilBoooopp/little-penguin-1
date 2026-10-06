@@ -68,7 +68,7 @@ static const struct file_operations jiffies_fops = {
 
 static int __init fortytwo_init(void)
 {
-        fortytwo_dir = debug_fs_create_dir("fortytwo", NULL);
+        fortytwo_dir = debugfs_create_dir("fortytwo", NULL);
         debugfs_create_file("id", 0666, fortytwo_dir, NULL, &id_fops);
         debugfs_create_file("jiffies", 0444, fortytwo_dir, NULL,
                             &jiffies_fops);
