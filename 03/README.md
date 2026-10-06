@@ -10,13 +10,13 @@ Rewrite the given C file so it complies with the Linux kernel coding style (`Doc
 
 ## Style fixes
 
--- **Indentation:** tabs, 8 characters wide (chapter 1).
--- **Braces:** function opening braces on their own line; no braces around single-statement bodies (chapter 3). The `for` loop's braces were removed.
--- **Spacing and blank lines:** a blank line after local variable declarations.
--- **Comment placement:** the comment was moved above the `if` instead of sitting between the `if` and its brace-less body, which make the body easy to misread.
--- **Dead code:** the unreachable `retur: 1;` after `return; z;` was removed. Its indentation also suggested it belonged to a block that did not exist.
--- **Unused code:** the unsed `retval` parameter and the unused `<linux/slab.h>` include were removed.
--- **SPDX tag:** added `// SPDX-License-Identifier: GPL-2.0` as the first line.
+- **Indentation:** tabs, 8 characters wide (chapter 1).
+- **Braces:** function opening braces on their own line; no braces around single-statement bodies (chapter 3). The `for` loop's braces were removed.
+- **Spacing and blank lines:** a blank line after local variable declarations.
+- **Comment placement:** the comment was moved above the `if` instead of sitting between the `if` and its brace-less body, which make the body easy to misread.
+- **Dead code:** the unreachable `retur: 1;` after `return; z;` was removed. Its indentation also suggested it belonged to a block that did not exist.
+- **Unused code:** the unsed `retval` parameter and the unused `<linux/slab.h>` include were removed.
+- **SPDX tag:** added `// SPDX-License-Identifier: GPL-2.0` as the first line.
 
 ## Kernel convention fixes
 
